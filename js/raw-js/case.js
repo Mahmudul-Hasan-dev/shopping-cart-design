@@ -20,6 +20,13 @@ document.getElementById('btn-case-plus').addEventListener('click', function () {
 
     caseNumber.value = newCaseNumber;
 
+    //calculate total
+    const phoneTotalPrice = getelementvaluebyId('phone-total');
+    const caseTotalPrice = getelementvaluebyId('case-total');
+    const subtotal = phoneTotalPrice + caseTotalPrice;
+    const subtotalelement = document.getElementById('sub-total');
+    subtotalelement.innerText = subtotal;
+
 })
 
 document.getElementById('btn-case-minus').addEventListener('click', function () {
@@ -29,4 +36,12 @@ document.getElementById('btn-case-minus').addEventListener('click', function () 
 
     const newCaseNumber = prevcaseNumber - 1;
     caseNumber.value = newCaseNumber;
+
+
+    //calculate total
+    const phoneTotalPrice = getelementvaluebyId('phone-total');
+    const caseTotalPrice = getelementvaluebyId('case-total');
+    const subtotal = phoneTotalPrice + caseTotalPrice;
+    const subtotalelement = document.getElementById('sub-total');
+    subtotalelement.innerText = subtotal;
 })
