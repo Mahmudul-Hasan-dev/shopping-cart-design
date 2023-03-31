@@ -21,22 +21,15 @@ function updatePrice(phoneNumber) {
     const price = phoneNumber * 1219;
     totalPrice.innerText = price;
 }
-//get element value by id
-function getelementvaluebyId(elementId) {
-    const phoneTotalelement = document.getElementById(elementId);
-    const phonetotalString = phoneTotalelement.innerText;
-    const prevphonetotal = parseInt(phonetotalString);
-    return prevphonetotal;
-}
+// //get element value by id
+// function getelementvaluebyId(elementId) {
+//     const phoneTotalelement = document.getElementById(elementId);
+//     const phonetotalString = phoneTotalelement.innerText;
+//     const prevphonetotal = parseInt(phonetotalString);
+//     return prevphonetotal;
+// }
 
-function calculateSubTotal() {
-    //calculate total
-    const phoneTotalPrice = getelementvaluebyId('phone-total');
-    const caseTotalPrice = getelementvaluebyId('case-total');
-    const subtotal = phoneTotalPrice + caseTotalPrice;
-    const subtotalelement = document.getElementById('sub-total');
-    subtotalelement.innerText = subtotal;
-}
+
 
 
 
